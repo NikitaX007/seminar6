@@ -28,7 +28,7 @@ string[] GetFillArray()
         }
         else namePoint = $"B{i - 1}";
         Console.Write($"Введите число для {namePoint}: ");
-        array[i] = Console.ReadLine().Replace(".", ","); // Немного погуглил, использовал Replace-метод
+        array[i] = Console.ReadLine()!.Replace(".", ","); // Немного погуглил, использовал Replace-метод
     }
     return array;
 }
